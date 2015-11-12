@@ -118,6 +118,7 @@ ini_set('display_errors', 1);
 "My string {$foo}"
 "SELECT foo FROM bar WHERE baz = 'bag'"
 ```
+
 ## SQL 查询
 SQL 关键字永远使用大写：SELECT、INSERT、UPDATE、WHERE、AS、JOIN、ON、IN 等。
 
@@ -130,6 +131,7 @@ $query = $this->db->query("SELECT foo, bar, baz, foofoo, foobar AS raboof, fooba
                 ORDER BY foobaz
                 LIMIT 5, 100");
 ```
+
 ## 缺省的函数参数
 适当的时候，提供函数参数的缺省值，这有助于防止因错误的函数调用引起的PHP错误， 另外提供常见的备选值可以节省几行代码。
 例如: function foo($bar = '', $baz = FALSE)
